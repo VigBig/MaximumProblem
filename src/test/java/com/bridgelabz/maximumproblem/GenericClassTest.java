@@ -51,4 +51,26 @@ public class GenericClassTest {
         assertEquals(94.5f,actual,0);
     }
 
+    @Test
+    public void StringMaxAtFirstPosition() {
+        GenericClass genericClass = new GenericClass();
+        String actual = genericClass.findMax("Apricot","Accent","Absolute");
+        assertEquals("Apricot",actual);
+    }
+
+
+    @Test
+    public void StringMaxAtSecondPosition() {
+        GenericClass genericClass = new GenericClass();
+        String actual = genericClass.findMax("Catch","My","Dog");
+        assertEquals("My",actual);
+    }
+
+    @Test
+    public void StringMaxAtThirdPosition() {
+        GenericClass genericClass = new GenericClass();
+        String actual = genericClass.findMax("Xylophone","Yellow","Zebra");
+        assertEquals("Zebra",actual);
+    }
+
 }
