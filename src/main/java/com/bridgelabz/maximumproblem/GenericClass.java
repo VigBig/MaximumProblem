@@ -10,10 +10,13 @@ public class GenericClass<T extends Comparable<T>> {
                 max = input[i];
 
         }
-        System.out.println("The maximum Value is : "+max);
+        printMax(max);
         return max;
     }
 
+    public void printMax(T max) {
 
+        System.out.println("The maximum Value is : "+max);
+    }
 
 }
